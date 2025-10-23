@@ -7,3 +7,8 @@
 @theme{
   --font-main: Inter, sans-serif;
 }
+.hero-bg {
+  background-image: url('/src/assets/vector1.png');
+  background-size: cover;
+  background-position: center;
+}

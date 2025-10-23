@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Website Down",
+    "description": "The website is not accessible from multiple locations.",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-10-22T09:30:00"
+  },
+  {
+    "id": 2,
+    "title": "Login Issue",
+    "description": "Unable to login to the user account, password reset not working.",
+    "customer": "Jane Smith",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-10-22T10:00:00"
+  },
+  {
+    "id": 3,
+    "title": "Payment Gateway Error",
+    "description": "The payment gateway fails during transaction completion.",
+    "customer": "Mark Lee",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-10-21T15:45:00"
+  },
+  {
+    "id": 4,
+    "title": "Page Load Time",
+    "description": "The homepage is taking too long to load.",
+    "customer": "Sarah Turner",
+    "priority": "Low",
+    "status": "Resolved",
+    "createdAt": "2025-10-20T12:30:00"
+  },
+  {
+    "id": 5,
+    "title": "Error 404",
+    "description": "User encounters a 404 error when trying to access the profile page.",
+    "customer": "Chris Evans",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-10-19T08:00:00"
+  },
+  {
+    "id": 6,
+    "title": "Broken Image Links",
+    "description": "Several image links on the website are broken and need to be fixed.",
+    "customer": "Emma Watson",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-10-18T09:20:00"
+  },
+  {
+    "id": 7,
+    "title": "Server Overload",
+    "description": "The server is experiencing high traffic and going down intermittently.",
+    "customer": "Paul Smith",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-10-17T14:05:00"
+  },
+  {
+    "id": 8,
+    "title": "Feature Request: Dark Mode",
+    "description": "Customer requests a dark mode feature for the website.",
+    "customer": "Anna Johnson",
+    "priority": "Low",
+    "status": "Closed",
+    "createdAt": "2025-10-16T11:40:00"
+  },
+  {
+    "id": 9,
+    "title": "Mobile App Crash",
+    "description": "The mobile app crashes when attempting to open the dashboard.",
+    "customer": "David Brown",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-10-15T16:25:00"
+  },
+  {
+    "id": 10,
+    "title": "UI Bug on Checkout Page",
+    "description": "A bug causes misalignment of checkout elements on the screen.",
+    "customer": "Olivia Green",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-10-14T13:50:00"
+  }
+]
