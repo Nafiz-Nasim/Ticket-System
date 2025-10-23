@@ -1,9 +1,20 @@
 import { section } from "motion/react-client";
 import React from "react";
 
-export default function TicketCard({ ticket }) {
+export default function TicketCard({ ticket,increment,setincrement,info,setinfo }) {
+
+
+const carclick=()=>{
+    const n =increment+1;
+    setincrement(n);
+    setinfo([...info,ticket]);
+  
+    
+
+   
+}
   return (
-    <section className="h-60 w-sm bg-white font-Inter">
+    <section className="h-60 md:w-sm  bg-white font-Inter m-5 " onClick={carclick}>
       <div className="p-5">
         <div className="one flex items-center justify-between">
           <h2 className="text-lg font-Inter ">{ticket.title}</h2>
