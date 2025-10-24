@@ -1,9 +1,10 @@
 import React, { use } from 'react'
 import TicketCard from './TicketCard';
 
-export default function Ticket({responceofdata,setincrement,increment,info,setinfo}) {
+export default function Ticket({responceofdata,setincrement,increment,info,setinfo,}) {
  const ticketData=use(responceofdata);
  console.log(ticketData);
+ 
  
 
   return (

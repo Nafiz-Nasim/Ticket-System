@@ -4,6 +4,7 @@ import Nav from "./components/nav/Nav";
 import Hero from "./components/hero/Hero";
 import Ticket from "./components/ticket/Ticket";
 import TaskStatus from "./components/task status/TaskStatus";
+import ResolvedTask from "./components/ResolvedTask/ResolvedTask";
 
 const data = async () => {
   const res = await fetch("/data.json");
@@ -16,7 +17,38 @@ function App() {
   const [increment, setincrement] = useState(0);
   const [decrement, setdecrement] = useState(0);
   const [info, setinfo] = useState([]);
-  console.log(info);
+  const [resolveinfo, setresolveinfo] = useState([]);
+
+  const clickcompletes = (information) => {
+
+ setresolveinfo([...resolveinfo,information]);
+    
+    const filterdata = info.filter((i) => i.id !== information.id);
+    console.log(filterdata);
+    setinfo(filterdata);
+
+    
+    const nnewincrement = increment - 1;
+    setincrement(nnewincrement);
+    const newdecrement = decrement + 1;
+    setdecrement(newdecrement);
+    
+
+  };
+
+
+
+
+  const resolvedButton=(forremoveinfo)=>{
+const newd = decrement -1;
+    setdecrement(newd);
+
+const filterremoveinfo=resolveinfo.filter((info)=>info.id!==forremoveinfo.id);
+setresolveinfo(filterremoveinfo);
+
+
+  }
+
 
   return (
     <>
@@ -38,12 +70,20 @@ function App() {
                   setinfo={setinfo}
                   increment={increment}
                   setincrement={setincrement}
-                  responceofdata={responceofdata}
+                  responceofdata={responceofdata} 
                 ></Ticket>
               </Suspense>
             </div>
-            <div className="right">
-              <TaskStatus info={info}></TaskStatus>
+            <div className="right flex flex-col ">
+              <TaskStatus
+                info={info}
+                setinfo={setinfo}
+                clickcompletes={clickcompletes}
+              />
+              <ResolvedTask
+                resolveinfo={resolveinfo}
+                setresolveinfo={setresolveinfo} resolvedButton={resolvedButton}
+              ></ResolvedTask>
             </div>
           </div>
         </div>
